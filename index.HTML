@@ -10,10 +10,66 @@
     <title>Current Weather</title>
 </head>
 <body>
+    <header>
     <div class="container">
     <input type="search" id="searchbar" placeholder="🗺 Enter City Name 🔍 " autocapitalize="on" autofocus="on" autocomplete="off" />
     <button id="search-button" type="submit">Submit</button>
     <button id="home-button" type="submit">Home</button>
+    </header>
+    <br />
+    <main>
+        <div class="row">
+            <div class="col-5">
+                <div class="current-location">
+                    <p id="date-time">
+                        Friday, 10:50 am
+                    </p>
+                    <h2 id="location">
+                        Chicago
+                    </h2>
+                </div>
+                <div class="suns-humidity">
+                    <h5>
+                        SUNRISE
+                    </h5>
+                    <p id="sunrise-time">
+                        6:58 AM
+                    </p>
+                    <h5>
+                        SUNSET
+                    </h5>
+                    <p id="sunset-time">
+                        5:30 PM
+                    </p>
+                    <h5>
+                        HUMIDITY
+                    </h5>
+                    <p id="humidity">
+                        33%
+                    </p>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="main-weather">
+                    <h5 class="weather-conditions">
+                        SUNNY
+                    </h5>
+                    <p id="conditions-icon">
+                        ☀️
+                    </p>
+                    <h1>
+                        41° F | C
+                    </h1>
+                    <h5>
+                        FEELS LIKE
+                    </h5>
+                    <p class="feels-like">
+                        36° F
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
 </div>
 <script src="src/app.js"></script>
 </body>
