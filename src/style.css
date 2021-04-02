@@ -1,1 +1,27 @@
+body {
+  background-image: url("clouds-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.weather-app {
+  max-width: 750px;
+  margin: 0 auto;
+}
+main {
+  max-width: 745px;
+  margin: 0 auto;
+  background-image: radial-gradient(
+      at 50% 100%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(0, 0, 0, 0.25) 100%
+    );
+  background-blend-mode: screen, overlay;
+  padding: 15px 35px;
+  border-radius: 35px;
+}

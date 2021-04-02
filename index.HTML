@@ -9,70 +9,72 @@
     <link rel="stylesheet" href="src/style.css">
     <title>Current Weather</title>
 </head>
-<body>
-    <header>
-    <div class="container">
-    <input type="search" id="searchbar" placeholder="🗺 Enter City Name 🔍 " autocapitalize="on" autofocus="on" autocomplete="off" />
-    <button id="search-button" type="submit">Submit</button>
-    <button id="home-button" type="submit">Home</button>
-    </header>
-    <br />
-    <main>
-        <div class="row">
-            <div class="col-5">
-                <div class="current-location">
-                    <p id="date-time">
-                        Friday, 10:50 am
-                    </p>
-                    <h1 id="location">
-                        Chicago
-                    </h1>
+<body> 
+<div class="container">
+    <div class="weather-app">
+        <header>
+            <input type="search" id="searchbar" placeholder="🗺 Enter City Name 🔍 " autocapitalize="on" autofocus="on" autocomplete="off" />
+            <button id="search-button" type="submit">Submit</button>
+            <button id="home-button" type="submit">Home</button>
+        </header>
+        <br />
+        <main>
+            <div class="row">
+                <div class="col-5">
+                    <div class="current-location">
+                        <p id="date-time">
+                            Friday, 10:50 am
+                        </p>
+                        <h1 id="location">
+                            Chicago
+                        </h1>
+                    </div>
+                    <div class="suns-humidity">
+                        <h4>
+                            SUNRISE
+                        </h4>
+                        <p id="sunrise-time">
+                            6:58 AM
+                        </p>
+                        <h4>
+                            SUNSET
+                        </h4>
+                        <p id="sunset-time">
+                            5:30 PM
+                        </p>
+                        <h4>
+                            HUMIDITY
+                        </h4>
+                        <p id="humidity">
+                            33%
+                        </p>
+                    </div>
                 </div>
-                <div class="suns-humidity">
-                    <h4>
-                        SUNRISE
-                    </h4>
-                    <p id="sunrise-time">
-                        6:58 AM
-                    </p>
-                    <h4>
-                        SUNSET
-                    </h4>
-                    <p id="sunset-time">
-                        5:30 PM
-                    </p>
-                    <h4>
-                        HUMIDITY
-                    </h4>
-                    <p id="humidity">
-                        33%
-                    </p>
+                <div class="col-5">
+                    <div class="main-weather">
+                        <h4 class="weather-conditions">
+                            SUNNY
+                        </h4>
+                        <p id="conditions-icon">
+                            ☀️
+                        </p>
+                        <h1>
+                            41° F | C
+                        </h1>
+                        <h4>
+                            FEELS LIKE
+                        </h4>
+                        <p class="feels-like">
+                            36° F
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="main-weather">
-                    <h4 class="weather-conditions">
-                        SUNNY
-                    </h4>
-                    <p id="conditions-icon">
-                        ☀️
-                    </p>
-                    <h1>
-                        41° F | C
-                    </h1>
-                    <h4>
-                        FEELS LIKE
-                    </h4>
-                    <p class="feels-like">
-                        36° F
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <a href="https://github.com/ARobin2288/Vanilla-Weather-App" target="_blank">Open-source code</a> by Robin Andrews
-    </footer>
+        </main>
+        <footer>
+            <a href="https://github.com/ARobin2288/Vanilla-Weather-App" target="_blank">Open-source code</a> by Robin Andrews
+        </footer>
+    </div>
 </div>
 <script src="src/app.js"></script>
 </body>
