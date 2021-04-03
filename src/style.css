@@ -8,6 +8,9 @@ body {
   max-width: 750px;
   margin: 0 auto;
 }
+header {
+  padding-top: 15px;
+}
 main {
   max-width: 745px;
   margin: 0 auto;
@@ -24,4 +27,16 @@ main {
   background-blend-mode: screen, overlay;
   padding: 15px 35px;
   border-radius: 35px;
+}
+.current-location {
+  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+}
+.suns-humidity {
+  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+}
+.main-weather {
+  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
+}
+footer {
+  padding-top: 15px;
 }
