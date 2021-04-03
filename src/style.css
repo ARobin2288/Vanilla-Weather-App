@@ -28,38 +28,100 @@ main {
       rgba(0, 0, 0, 0.25) 100%
     );
   background-blend-mode: screen, overlay;
-  padding: 15px 35px;
+  padding: 18px 25px;
   border-radius: 35px;
+  text-align: center;
+  position: relative;
+  height: 475px;
 }
-.current-location {
-  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
-}
-.suns-humidity {
-  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
-}
-.main-weather {
-  /* background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%); */
-}
-footer {
-  padding-top: 15px;
+
+.current-info {
 }
 
 h1 {
-  color: #d6b0b1;
+  color: #ecb9a9;
   font-family: "Lobster", cursive;
-  text-transform: uppercase;
-  font-size: 50px;
+  text-transform: capitalize;
+  font-size: 65px;
+  margin: 0 auto;
 }
-#units {
-  color: steelblue;
-  font-size: 22px;
-}
+
 h4 {
   color: goldenrod;
   font-weight: lighter;
+  font-size: 25px;
+  margin: 0 auto;
 }
+
 p {
-  color: steelblue;
-  font-size: 18px;
+  color: #8ac4d0;
+  font-size: 20px;
   font-weight: bold;
+  margin: 0 auto;
+  padding-bottom: 5px;
+}
+
+.current-location {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  text-align: left;
+  padding: 10px 22px 10px 40px;
+  border-radius: 22px;
+  width: 425px;
+  height: 115px;
+  border: 2px solid #1f6380;
+}
+
+#date-time {
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.suns-humidity {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  left: 22px;
+  border-radius: 18px;
+  width: 200px;
+  height: 245px;
+  margin: 20px 5px 5px 100px;
+  border: 2px solid #1f6380;
+  padding: 10px 25px 10px 18px;
+}
+
+#sunrise-time {
+  padding-bottom: 8px;
+}
+
+.sunset-time {
+  padding-bottom: 15px;
+}
+
+#under-sunset {
+  margin: 10px 0px 15px 0px;
+}
+
+#humidity {
+  padding-bottom: 0px;
+}
+
+.main-weather {
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  border-radius: 40px;
+  width: 325px;
+  height: 300px;
+  border: 2px solid #435560;
+  padding: 10px;
+}
+
+#under-temp {
+  padding: 0 auto;
+}
+#units {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #8ac4d0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+footer {
+  padding-top: 15px;
 }
