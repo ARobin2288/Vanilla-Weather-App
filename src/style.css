@@ -8,6 +8,34 @@ body {
 header {
   margin-top: 18px;
 }
+
+#searchbar {
+  font-weight: bolder;
+  width: 155px;
+}
+
+#search-button {
+  color: #161d6f;
+  border-color: #726a95;
+  width: 55px;
+}
+
+#search-button:hover {
+  color: #f8f1f1;
+  background-color: #5c6e91;
+}
+
+#home-button {
+  color: #161d6f;
+  border-color: #726a95;
+  width: 55px;
+}
+
+#home-button:hover {
+  color: #f8f1f1;
+  background-color: #5c6e91;
+}
+
 .weather-app {
   max-width: 750px;
   margin: 0 auto;
@@ -38,14 +66,10 @@ main {
   height: 475px;
 }
 
-.current-info {
-}
-
 h1 {
-  color: #ecb9a9;
+  color: #f7d9d9;
   font-family: "Lobster", cursive;
   text-transform: capitalize;
-
   margin: 0 auto;
 }
 
@@ -57,7 +81,7 @@ h4 {
 }
 
 p {
-  color: #8ac4d0;
+  color: #93abd3;
   font-size: 20px;
   font-weight: bold;
   margin: 0 auto;
@@ -65,13 +89,13 @@ p {
 }
 
 .current-location {
-  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-image: linear-gradient(60deg, #29323cc5 0%, #485563c2 100%);
   text-align: left;
   padding: 5px 22px 5px 22px;
   border-radius: 22px;
   width: 425px;
   height: 118px;
-  border: 2px solid #1f6380;
+  border: 2px solid #f3ac2796;
 }
 
 #date-time {
@@ -84,13 +108,13 @@ p {
 }
 
 .suns-humidity {
-  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-image: linear-gradient(60deg, #29323cc4 0%, #485563c7 100%);
   left: 22px;
   border-radius: 18px;
   width: 200px;
   height: 245px;
   margin: 15px 5px 5px 50px;
-  border: 2px solid #1f6380;
+  border: 2px solid #f3ac2796;
   padding: 14px 25px 10px 18px;
 }
 
@@ -108,6 +132,7 @@ p {
   margin-right: auto;
   margin-top: 7px;
   margin-bottom: 10px;
+  color: #d28d0d;
 }
 
 #humidity {
@@ -115,11 +140,11 @@ p {
 }
 
 .main-weather {
-  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-image: linear-gradient(60deg, #29323cc0 0%, #485563c5 100%);
   border-radius: 40px;
-  width: 325px;
+  width: 350px;
   height: 350px;
-  border: 2px solid #435560;
+  border: 2px solid #f3ac2796;
   padding: 18px;
 }
 
@@ -133,15 +158,17 @@ p {
 }
 
 #temperature {
-  font-size: 75px;
+  font-size: 85px;
 }
+
 #under-temp {
   padding: 0px;
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 22px;
-  margin-bottom: 22px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  color: #d28d0d;
 }
 
 #feels-like {
@@ -149,7 +176,7 @@ p {
 }
 #units {
   font-family: "Open Sans Condensed", sans-serif;
-  color: #8ac4d0;
+  color: #93abd3;
   font-size: 22px;
   font-weight: bold;
 }
