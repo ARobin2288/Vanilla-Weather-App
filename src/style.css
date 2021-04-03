@@ -5,6 +5,9 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+header {
+  margin-top: 18px;
+}
 .weather-app {
   max-width: 750px;
   margin: 0 auto;
@@ -17,7 +20,7 @@ header {
 main {
   max-width: 745px;
   margin: 0 auto;
-  background-image: radial-gradient(
+  /* background-image: radial-gradient(
       at 50% 100%,
       rgba(255, 255, 255, 0.5) 0%,
       rgba(0, 0, 0, 0.5) 100%
@@ -26,9 +29,9 @@ main {
       to bottom,
       rgba(255, 255, 255, 0.25) 0%,
       rgba(0, 0, 0, 0.25) 100%
-    );
+    ); */
   background-blend-mode: screen, overlay;
-  padding: 18px 25px;
+  /* padding: 18px 25px; */
   border-radius: 35px;
   text-align: center;
   position: relative;
@@ -42,7 +45,7 @@ h1 {
   color: #ecb9a9;
   font-family: "Lobster", cursive;
   text-transform: capitalize;
-  font-size: 65px;
+
   margin: 0 auto;
 }
 
@@ -64,16 +67,20 @@ p {
 .current-location {
   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   text-align: left;
-  padding: 10px 22px 10px 40px;
+  padding: 5px 22px 5px 22px;
   border-radius: 22px;
   width: 425px;
-  height: 115px;
+  height: 118px;
   border: 2px solid #1f6380;
 }
 
 #date-time {
   margin: 0 auto;
-  padding: 0px;
+  padding: 0px 0px 0px 10px;
+}
+
+#location {
+  font-size: 65px;
 }
 
 .suns-humidity {
@@ -82,9 +89,9 @@ p {
   border-radius: 18px;
   width: 200px;
   height: 245px;
-  margin: 20px 5px 5px 100px;
+  margin: 15px 5px 5px 50px;
   border: 2px solid #1f6380;
-  padding: 10px 25px 10px 18px;
+  padding: 14px 25px 10px 18px;
 }
 
 #sunrise-time {
@@ -92,11 +99,15 @@ p {
 }
 
 .sunset-time {
-  padding-bottom: 15px;
+  padding-bottom: 8px;
 }
 
 #under-sunset {
-  margin: 10px 0px 15px 0px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+  margin-bottom: 10px;
 }
 
 #humidity {
@@ -107,13 +118,34 @@ p {
   background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   border-radius: 40px;
   width: 325px;
-  height: 300px;
+  height: 350px;
   border: 2px solid #435560;
-  padding: 10px;
+  padding: 18px;
 }
 
+.weather-conditions {
+  font-size: 28px;
+}
+
+#conditions-icon {
+  font-size: 42px;
+  padding: 8px 0px 0px 0px;
+}
+
+#temperature {
+  font-size: 75px;
+}
 #under-temp {
-  padding: 0 auto;
+  padding: 0px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  margin-bottom: 22px;
+}
+
+#feels-like {
+  padding-top: 5px;
 }
 #units {
   font-family: "Open Sans Condensed", sans-serif;
@@ -123,5 +155,6 @@ p {
 }
 
 footer {
-  padding-top: 15px;
+  position: relative;
+  top: -60px;
 }
