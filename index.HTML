@@ -10,9 +10,8 @@
     <script src="https://kit.fontawesome.com/ea6c14e433.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans+Condensed:wght@300&display=swap"
             rel="stylesheet">
-    
     <link rel="stylesheet" href="src/style.css">
-    <title>Current Weather</title>
+    <title>🌤 Weather</title>
 </head>
 <body> 
 <div class="container">
@@ -27,61 +26,51 @@
         <br />
         <main>
             <form class="current-info">
-            <div class="row">
-                <div class="col-5">
-                    <div class="current-location">
-                        <p id="date-time">UPDATED <span id="date"> </span>
-                        </p>
-                        <h1 id="location">
-                        </h1>
+                <div class="row">
+                    <div class="col-5">
+                        <div class="current-location">
+                            <p id="date-time">UPDATED <span id="date"> </span></p>
+                            <h1 id="location"></h1>
+                        </div>
+                        <div class="extra">
+                            <h4 id="feels-like">
+                                FEELS LIKE
+                            </h4>
+                            <p id="feels"><span id="feels-temp"></span>° F</p>
+                            <hr />
+                            <h4>
+                                WIND
+                            </h4>
+                            <p id="wind-speed"><span id="wind"></span>km/h</p>
+                            <hr />
+                            <h4>
+                                HUMIDITY
+                            </h4>
+                            <p id="humid"><span id="humidity">
+                            </span>%
+                            </p>
+                        </div>
                     </div>
-                    <div class="suns-humidity">
-                        <h4>
-                            SUNRISE
-                        </h4>
-                        <p id="sunrise"><span id="sunrise-time">
-                            </span> AM
-                        </p>
-                        <h4>
-                            SUNSET
-                        </h4>
-                        <p id="sunset"><span id="sunset-time">
-                            </span> PM
-                        </p>
-                        <hr id="under-sunset" />
-                        <h4>
-                            HUMIDITY
-                        </h4>
-                        <p id="humid"><span id="humidity">
-                        </span>%
-                        </p>
-                    </div>
-                </div>
-                <div class="col-7">
-                    <div class="space">
-                        <br />
-                        <br />
-                    </div>
-                    <div class="main-weather">
-                        <h4 id="weather-conditions"></h4>
-                        <img src="" id="conditions-icon" />
-                        <h1 id="temp">
-                            <span id="temperature"></span>
-                            <span class="units">
+                    <div class="col-7">
+                        <div class="space">
+                            <br />
+                            <br />
+                        </div>
+                        <div class="main-weather">
+                            <h1 id="temp">
+                                <img src="" id="conditions-icon" width="120" height="120" />
+                                <br />
+                                <span id="temperature"></span>
+                                <span class="units">
                                 <a href="#" id="fahrenheit-link" class="active">°F </a>|<a href="#" id="celcius-link">°C</a>
-                            </span>
-                        </h1>
-                        <hr id="under-temp" />
-                        <h4 id="feels-like">
-                            FEELS LIKE
-                        </h4>
-                        <p id="feels"><span id="feels-temp">
-                            </span>° F
-                        </p>
+                                </span>
+                            </h1>
+                            <hr />
+                            <h4 id="weather-conditions"></h4>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <br />
+                <br />
             </form>
             <ul>
                 <li>
@@ -89,35 +78,35 @@
                     <br />
                     <span id="five-day">25° | 16°</span>
                     <br />
-                    SATURDAY
+                        SATURDAY
                 </li>
                 <li>
                     <i class="far fa-snowflake" id="icons"></i>
                     <br />
                     <span id="five-day">25° | 16°</span>
                     <br />
-                    SUNDAY
+                        SUNDAY
                 </li>
                 <li>
                     <i class="fas fa-cloud-sun" id="icons"></i>
                     <br />
                     <span id="five-day">25° | 16°</span>
                     <br />
-                    MONDAY
+                        MONDAY
                 </li>
                 <li>
                     <i class="fas fa-sun" id="icons"></i>
                     <br />
                     <span id="five-day">25° | 16°</span>
                     <br />
-                    TUESDAY
+                        TUESDAY
                 </li>
                 <li>
                     <i class="far fa-snowflake" id="icons"></i>
                     <br />
                     <span id="five-day">25° | 16°</span>
                     <br />
-                    WEDNESDAY
+                        WEDNESDAY
                 </li>
             </ul>
         </main>

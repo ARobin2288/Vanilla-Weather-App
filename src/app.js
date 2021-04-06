@@ -23,6 +23,7 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
+    console.log(response.data);
     let temperatureElement = document.querySelector("#temperature");
     let locationElement = document.querySelector("#location");
     let conditionsElement = document.querySelector("#weather-conditions")
@@ -30,6 +31,7 @@ function displayTemperature(response) {
     let feelsElement = document.querySelector("#feels-temp");
     let dateElement = document.querySelector("#date");
     let iconElement = document.querySelector("#conditions-icon");
+    let windElement = document.querySelector("#wind");
 
     fahrenheitTemperature = response.data.main.temp;
 
@@ -40,6 +42,7 @@ function displayTemperature(response) {
     feelsElement.innerHTML = Math.round (response.data.main.feels_like);
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+    windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function search(city) {
