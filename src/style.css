@@ -143,12 +143,13 @@ p {
 }
 
 #conditions-icon {
-  font-size: 42px;
-  padding: 8px 0px 0px 0px;
+  font-size: 30px;
 }
 
 #temp {
-  font-size: 85px;
+  position: relative;
+  font-size: 95px;
+  margin-top: -25px;
 }
 
 #under-temp {
@@ -156,14 +157,15 @@ p {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 18px;
+  margin-top: 14px;
   margin-bottom: 18px;
   color: #d28d0d;
 }
 
 #feels-like {
-  padding-top: 5px;
+  padding-top: 1px;
 }
+
 #units {
   font-family: "Open Sans Condensed", sans-serif;
   color: #93abd3;
