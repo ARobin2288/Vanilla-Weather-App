@@ -40,8 +40,19 @@ function displayTemperature(response) {
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
+function search(city) {
 let apiKey = "0f1996bbebf340db45987ce9fc344036";
-let city = "Chicago";
 let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-
 axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+    event.preventDefault();
+    let searchbarElement = document.querySelector("#searchbar");
+    search(searchbarElement.value);
+}
+
+search("Chicago");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
