@@ -139,7 +139,7 @@ p {
 
 #weather-conditions {
   font-size: 28px;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 #conditions-icon {
@@ -147,7 +147,7 @@ p {
   padding: 8px 0px 0px 0px;
 }
 
-#temperature {
+#temp {
   font-size: 85px;
 }
 
