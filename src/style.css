@@ -107,11 +107,11 @@ p {
   padding: 14px 25px 10px 18px;
 }
 
-#sunrise-time {
+#sunrise {
   padding-bottom: 8px;
 }
 
-.sunset-time {
+#sunset {
   padding-bottom: 8px;
 }
 
@@ -124,7 +124,7 @@ p {
   color: #d28d0d;
 }
 
-#humidity {
+#humid {
   padding-bottom: 0px;
 }
 
@@ -137,8 +137,9 @@ p {
   padding: 18px;
 }
 
-.weather-conditions {
+#weather-conditions {
   font-size: 28px;
+  text-transform: capitalize;
 }
 
 #conditions-icon {
