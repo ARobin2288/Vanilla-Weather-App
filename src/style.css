@@ -152,6 +152,24 @@ p {
   margin-top: -25px;
 }
 
+#fahrenheit-link {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #93abd3;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: default;
+}
+
+#celcius-link {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #93abd3;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: default;
+}
+
 #under-temp {
   padding: 0px;
   width: 65%;
@@ -166,7 +184,7 @@ p {
   padding-top: 1px;
 }
 
-#units {
+.units {
   font-family: "Open Sans Condensed", sans-serif;
   color: #93abd3;
   font-size: 22px;
