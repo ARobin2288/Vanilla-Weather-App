@@ -1,25 +1,46 @@
 function formatDate(timestamp) {
-    let date = new Date(timestamp);
-    let hours = date.getHours();
+    let now = new Date(timestamp);
+
+    let days = [
+        "SUN", 
+        "MON", 
+        "TUES", 
+        "WED", 
+        "THURS", 
+        "FRI", 
+        "SAT"
+    ];
+    let day = days[now.getDay()];
+
+    let months = [
+	        "JANUARY",
+	        "FEBRUARY",
+	        "MARCH",
+	        "APRIL",
+	        "MAY",
+	        "JUNE",
+	        "JULY",
+	        "AUGUST",
+	        "SEPTEMBER",
+	        "OCTOBER",
+	        "NOVEMBER",
+	        "DECEMBER"
+	      ];
+	      let month = months[now.getMonth()];
+
+    let date = now.getDate();
+    let year = now.getFullYear();
+    let hours = now.getHours();
     if (hours < 10) {
         hours = `0${hours}`;
     }
-    let minutes = date.getMinutes();
+    let minutes = now.getMinutes();
     if (minutes < 10) {
         minutes = `0${minutes}`;
     }
 
-    let days = [
-        "SUNDAY", 
-        "MONDAY", 
-        "TUESDAY", 
-        "WEDNESDAY", 
-        "THURSDAY", 
-        "FRIDAY", 
-        "SATURDAY"
-    ];
-    let day = days[date.getDay()];
-    return `${day}, ${hours}:${minutes}`;
+    
+    return `${day} ${month} ${date}, ${year}  ${hours}:${minutes}`;
 }
 
 function displayTemperature(response) {
