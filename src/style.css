@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Open Sans Condensed", sans-serif;
-  padding-top: 12px;
+  padding-top: 35px;
   max-width: 750px;
   margin: 0 auto;
 }
@@ -68,7 +68,7 @@ p {
   border-radius: 22px;
   width: 425px;
   height: 118px;
-  border: 2px solid #425d70;
+  border: 2px solid #3c415c;
 }
 
 #date-time {
@@ -81,7 +81,7 @@ p {
   width: 200px;
   height: 245px;
   margin: 15px 5px 0px 80px;
-  border: 2px solid #425d70;
+  border: 2px solid #3c415c;
   padding: 14px 25px 10px 18px;
 }
 
@@ -99,7 +99,7 @@ hr {
   border-radius: 40px;
   width: 425px;
   height: 350px;
-  border: 2px solid #425d70;
+  border: 2px solid #3c415c;
   padding: 0px 18px 18px 18px;
 }
 
@@ -153,7 +153,7 @@ li {
   margin: 0 auto;
   padding: 10px 10px;
   font-size: 18px;
-  border: 2px solid #425d70;
+  border: 2px solid #3c415c;
   border-radius: 18px;
   width: 115px;
   color: #f7d9d9;
