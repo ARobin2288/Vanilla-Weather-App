@@ -42,7 +42,8 @@ function formatDate(timestamp) {
     return `${day} ${month} ${date}, ${year}  ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+    console.log(response.data.daily);
     let forecastElement = document.querySelector("#forecast");
 
    let days = ["THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY", "MONDAY"]; 
@@ -67,6 +68,12 @@ function displayForecast() {
     forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+    console.log(coordinates);
+    let apiKey = "0f1996bbebf340db45987ce9fc344036";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(displayForecast);
+}
 
 function displayTemperature(response) {
     console.log(response.data);
@@ -89,6 +96,8 @@ function displayTemperature(response) {
     dateElement.innerHTML = formatDate(response.data.dt * 1000);
     iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     windElement.innerHTML = Math.round(response.data.wind.speed);
+
+    getForecast(response.data.coord);
 }
 
 function search(city) {
@@ -132,4 +141,3 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 search("Chicago");
-displayForecast();
