@@ -100,12 +100,15 @@ hr {
   width: 425px;
   height: 350px;
   border: 2px solid #3c415c;
-  padding: 0px 18px 18px 18px;
+  padding: 22px 18px 18px 18px;
 }
 
 #conditions-icon {
   padding: 0px;
+  background-color: #93abd3;
+  border-radius: 50px;
 }
+
 #temperature {
   font-size: 122px;
 }
@@ -147,15 +150,24 @@ hr {
   border: 2px solid #3c415c;
   border-radius: 18px;
   font-size: 20px;
-  color: #f7d9d9;
+  color: goldenrod;
   text-transform: uppercase;
   position: relative;
-  padding-left: 90px;
   width: 650px;
 }
 
-#five-day {
-  color: #93abd3;
+#icons {
+  background-color: #93abd3;
+  border-radius: 50px;
+}
+
+#weather-forecast-temperature-max {
+  color: #f7d9d9;
+  font-size: 18px;
+}
+
+#weather-forecast-temperature-min {
+  color: #f7d9d9;
   font-size: 18px;
 }
 
