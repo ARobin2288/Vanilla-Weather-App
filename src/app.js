@@ -140,16 +140,16 @@ function displayFahrenheitTemperature(event) {
 }
 
 function searchLocation(position) {
-            let apiKey = "0f1996bbebf340db45987ce9fc344036";
-            let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
+    let apiKey = "0f1996bbebf340db45987ce9fc344036";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=imperial`;
 
-            axios.get(apiUrl).then(displayWeatherCondition);
-        }
+    axios.get(apiUrl).then(displayForecast);
+}
 
 function getCurrentLocation(event) {
-            event.preventDefault();
-            navigator.geolocation.getCurrentPosition(searchLocation);
-        }
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchLocation);
+}
 
 let fahrenheitTemperature = null;
 
@@ -163,6 +163,6 @@ let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let currentLocationButton = document.querySelector("#home-button");
-        currentLocationButton.addEventListener("click", getCurrentLocation);
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 search("Chicago");

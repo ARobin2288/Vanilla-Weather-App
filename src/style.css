@@ -68,7 +68,7 @@ p {
   border-radius: 22px;
   width: 425px;
   height: 118px;
-  border: 2px transparent #3c415c;
+  border: 2px solid #3c415c;
 }
 
 #date-time {
@@ -91,7 +91,7 @@ hr {
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #d28d0d;
+  color: #d3e0ea;
 }
 
 .main-weather {
@@ -154,6 +154,8 @@ hr {
   text-transform: uppercase;
   position: relative;
   width: 650px;
+  height: 125px;
+  padding-top: 6px;
 }
 
 #icons {
