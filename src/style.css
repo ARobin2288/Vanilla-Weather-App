@@ -12,7 +12,7 @@ body {
 
 header {
   position: relative;
-  margin: 18px 0px -10px 8px;
+  margin: 18px 0px -18px 5px;
 }
 
 #searchbar {
@@ -66,11 +66,12 @@ p {
 .current-location {
   background-image: linear-gradient(60deg, #29323cc5 0%, #485563c2 100%);
   text-align: left;
-  padding: 5px 22px 5px 22px;
+  padding: 5px 22px 5px 10px;
   border-radius: 22px;
   width: 425px;
   height: 118px;
-  border: 2px solid #3c415c;
+  border: 2px solid #343f56;
+  margin-left: -22px;
 }
 
 #date-time {
@@ -80,10 +81,10 @@ p {
 .extra {
   background-image: linear-gradient(60deg, #29323cc4 0%, #485563c7 100%);
   border-radius: 18px;
-  width: 175px;
+  width: 200px;
   height: 245px;
   margin: 15px 0px 0px 25px;
-  border: 2px solid #3c415c;
+  border: 2px solid #343f56;
   padding: 14px 25px 10px 18px;
 }
 
@@ -93,7 +94,7 @@ hr {
   margin-right: auto;
   margin-top: 5px;
   margin-bottom: 5px;
-  color: #d3e0ea;
+  color: #5f939a;
 }
 
 .main-weather {
@@ -101,9 +102,9 @@ hr {
   border-radius: 40px;
   width: 275px;
   height: 315px;
-  border: 2px solid #3c415c;
+  border: 2px solid #343f56;
   padding: 22px 18px 18px 18px;
-  margin-left: -65px;
+  margin-left: -45px;
 }
 
 #conditions-icon {
@@ -152,7 +153,7 @@ hr {
   text-align: center;
   margin-left: -18px;
   background-image: linear-gradient(60deg, #29323cc0 0%, #485563c5 100%);
-  border: 2px solid #3c415c;
+  border: 2px solid #343f56;
   border-radius: 18px;
   font-size: 18px;
   color: goldenrod;
@@ -183,11 +184,11 @@ hr {
 footer {
   margin: 0 auto;
   position: relative;
-  padding-top: 85px;
-  color: #aaaaaa;
+  padding-top: 55px;
+  color: #706e6e;
 }
 
 #open-source-link {
-  color: #aaaaaa;
+  color: #706e6e;
   text-decoration: none;
 }
