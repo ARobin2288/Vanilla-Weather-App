@@ -62,7 +62,7 @@ function displayForecast(response) {
             `
             <div class="col-2">
                 <div class="day-one">
-                    <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="" width="46" id="icons"/>
+                    <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="" width="50" id="icons"/>
                     <div id="weather-forecast-temperatures">
                         <p id= "six-temps">
                             <span id="weather-forecast-temperature-max">${Math.round(forecastDay.temp.max)}° 
@@ -139,17 +139,6 @@ function displayFahrenheitTemperature(event) {
     temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function showPosition(position) {
-    let latitude = position.coords.latitude;
-    let longitude = position.coords.longitude;
-    let apiKey = "0f1996bbebf340db45987ce9fc344036";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
-
-    axios.get(apiUrl).then(displayTemperature);
-}
-
-navigator.geolocation.getCurrentPosition(showPosition);
-    
 let fahrenheitTemperature = null;
 
 let form = document.querySelector("#search-form");

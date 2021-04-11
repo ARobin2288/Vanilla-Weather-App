@@ -1,10 +1,12 @@
 body {
   background-image: url("clouds-background.jpg");
-  background-repeat: no-repeat;
+  min-height: 100%;
+  max-width: 600px;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   font-family: "Open Sans Condensed", sans-serif;
   padding-top: 35px;
-  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -30,7 +32,7 @@ button:hover {
 }
 
 main {
-  max-width: 745px;
+  width: 745px;
   margin: 0 auto;
   background-blend-mode: screen, overlay;
   text-align: center;
@@ -78,9 +80,9 @@ p {
 .extra {
   background-image: linear-gradient(60deg, #29323cc4 0%, #485563c7 100%);
   border-radius: 18px;
-  width: 200px;
+  width: 175px;
   height: 245px;
-  margin: 15px 5px 0px 80px;
+  margin: 15px 0px 0px 25px;
   border: 2px solid #3c415c;
   padding: 14px 25px 10px 18px;
 }
@@ -97,20 +99,23 @@ hr {
 .main-weather {
   background-image: linear-gradient(60deg, #29323cc0 0%, #485563c5 100%);
   border-radius: 40px;
-  max-width: 425px;
-  max-height: 350px;
+  width: 275px;
+  height: 315px;
   border: 2px solid #3c415c;
   padding: 22px 18px 18px 18px;
+  margin-left: -65px;
 }
 
 #conditions-icon {
   padding: 0px;
   background-color: #93abd3;
   border-radius: 50px;
+  height: 75px;
+  width: 75px;
 }
 
 #temperature {
-  font-size: 122px;
+  font-size: 100px;
 }
 
 #fahrenheit-link {
@@ -145,22 +150,24 @@ hr {
 
 #forecast {
   text-align: center;
-  margin: 0 auto;
+  margin-left: -18px;
   background-image: linear-gradient(60deg, #29323cc0 0%, #485563c5 100%);
   border: 2px solid #3c415c;
   border-radius: 18px;
-  font-size: 20px;
+  font-size: 18px;
   color: goldenrod;
   text-transform: uppercase;
   position: relative;
-  width: 650px;
-  height: 125px;
-  padding-top: 6px;
+  width: 550px;
+  height: 120px;
+  padding: 8px 5px 8px 5px;
 }
 
 #icons {
   background-color: #93abd3;
   border-radius: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 #weather-forecast-temperature-max {
